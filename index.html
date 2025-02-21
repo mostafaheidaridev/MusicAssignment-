@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Music</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Add Music</h1>
+    </header>
+
+    <main>
+        <section id="cd-form-section">
+            <form id="cd-form">
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div id="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+
+
+                <div id="form-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+
+                <div id="form-group">
+                    <button id="add-BTN" type="submit">Add</button>
+                </div>
+
+
+            </form>
+        </section>
+
+        <section>
+            <table>
+                <thead id="cd-table-header">
+                    <tr>
+                        <th>Author</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="cd-list">
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>
+
+<template id="cd-template">
+    <tr>
+        <th class="cd-author"></th>
+        <th class="cd-title"></th>
+        <th class="cd-year"></th>
+        <th>
+            <button class="delete-cd">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </th>
+    </tr>
+</template>
