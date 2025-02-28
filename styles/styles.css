@@ -23,6 +23,37 @@ body {
         justify-content: center;
         margin-bottom: 2rem;
     }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem; 
+        padding: 0.75rem 1.5rem; 
+        background-color: var(--colorBg);
+    }
+    
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    nav li {
+        list-style: none;
+    }
+    
+    nav a {
+        color: var(--colorTextBlack);
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem; 
+        transition: color 0.2s ease-in-out;
+    }
+    
+    nav a:hover {
+        color: var(--colorPrimary); 
+    }
+    
 }
 
 #cd-form-section {
